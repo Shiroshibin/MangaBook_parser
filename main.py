@@ -136,6 +136,8 @@ def pars_chapter():
         wp_id_list.append(post_image_to_server(f'{chapter_dir_name}/{url_of_img.split("/")[-1]}'[:-1]))
     
         count += 1
+        
+        break
 
 
     with open(f"page_json/{url.split('/')[4]}", "w+") as file:
